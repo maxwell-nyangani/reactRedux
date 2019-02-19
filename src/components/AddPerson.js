@@ -1,5 +1,10 @@
 import React from "react";
 class AddPerson extends React.Component {
+  /* This code produces a simple form with 3 fields to collect input from the user. 
+  It receives the method addNewPerson from Home component via the props and invokes 
+  it when a valid submission is triggered. It will take the form data and use it to 
+  create a person in the state of Home component. 
+  */
   state = {
     name: "",
     age: "",

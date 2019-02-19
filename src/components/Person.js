@@ -2,6 +2,14 @@ import React from "react";
 import Hobby from "./Hobby";
 
 class Person extends React.Component {
+  /* 
+  This component also receives data and a function via the props. 
+  It is given the object containing the data for one person, a key value 
+  and the function to call when the user deletes the person it is representing. 
+  It also uses a sub component named Hobby when it wants to render the list of hobbies of a person. 
+  It does this by looping through the list of hobbies and passes an object containing 
+  the data of a hobby to the Hobby component via the props.
+  */
   render() {
     const { id, isAnonymous, name, age, sex, hobbies } = this.props.person;
 
